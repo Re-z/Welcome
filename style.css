@@ -2,9 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
-
+body {
+	background: lightgrey;
+}
 .main {
 	width: 960px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 .main__title {
@@ -33,4 +36,22 @@
 	margin-top: 100px;
 	width: 150px;
 	height: 150px;
+}
+
+
+@media (max-width: 480px) {
+	body {
+		background: gold;
+	}
+	.main__title {
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.portfolio-item {
+		display: block;
+		margin: 0 auto;
+	}
+	.portfolio-item:hover {
+		color: red;
+	}
 }
